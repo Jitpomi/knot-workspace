@@ -20,6 +20,12 @@ In traditional networking, devices remain fundamentally divided by their physica
 
 This relationship naturally expands beyond a simple pair into a **Family**. A logical Knot can tie together many different Ropes (devices)—each with its own distinct roles, character, and capabilities (e.g., sensors, microphones, cameras, actuators). Under the roof of a single logical Knot, these diverse devices function in harmony, looking out for each other and working together as a unified household.
 
+As we scale upward, these structures organize organically into larger network topologies:
+*   **Family (The Micro-Unit):** A single logical Knot coordinating a household or workstation of diverse Ropes (devices).
+*   **Clan (The Local Community):** A collection of Knots (families) cooperating and coordinating within a local network, workspace, or shared organization.
+*   **Tribe (The Ecosystem):** A wider community of Knots and Clans cooperating under a shared application domain, namespace catalog, or workspace.
+*   **Nation (The Global Mesh):** The entire global, decentralized federation of Knots, Clans, and Tribes interoperating seamlessly over the open, transport-agnostic Knot protocol.
+
 ### Why is this important for P2P Networking?
 
 In traditional networking, connections are strictly **1-to-1 links** between physical IP addresses. If you have a security camera and a floodlight at your front door, a central cloud server must manually manage and group their separate connections.
