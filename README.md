@@ -12,11 +12,13 @@ To make peer-to-peer networking simple, Knot introduces a real-world physical me
 *   **Knots (Logical Rooms / Roles):** A Knot is a logical grouping or containment zone where multiple physical devices are gathered. For example, a logical Knot could represent `"driveway"`, `"front-gate"`, or `"living-room"`. A Knot isn't a physical device itself—it represents a logical location or role.
 *   **Tying the Knot:** When physical devices (**Ropes**) connect to the network session and register under the same logical containment ID, they are **"tying the knot"**. This cryptographic link binds those separate hardware devices together into a single coordinated participant in the session.
 
-### 💍 The Essence: "And the two shall become one"
+### 💍 The Essence: "And the two shall become one" ... into a Family
 
 At its heart, the Knot metaphor reflects a timeless concept of partnership: *two separate entities uniting to form a single, transcending bond.*
 
 In traditional networking, devices remain fundamentally divided by their physical socket addresses. In the Knot Protocol, when Ropes register under the same `knot_id` to "tie the knot", they achieve a state of logical unity. Their physical separation is transcended by a shared logical session, allowing them to act, coordinate, and communicate as one.
+
+This relationship naturally expands beyond a simple pair into a **Family**. A logical Knot can tie together many different Ropes (devices)—each with its own distinct roles, character, and capabilities (e.g., sensors, microphones, cameras, actuators). Under the roof of a single logical Knot, these diverse devices function in harmony, looking out for each other and working together as a unified household.
 
 ### Why is this important for P2P Networking?
 
