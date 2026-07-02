@@ -100,6 +100,14 @@ impl KnotConnection for IrohConnection {
     fn local_node_id(&self) -> String {
         self.local_id.clone()
     }
+
+    async fn close(&self, error_code: u32, reason: &str) -> Result<()> {
+        use iroh::endpoint::VarInt;
+        // Temporary transport-level mitigation: allow QUIC buffers to drain before hard termination
+        tokio::time::sleep(std::time::Duration::from_millis(50)).await;
+        self.conn.close(VarInt::from_u32(error_code), reason.as_bytes());
+        Ok(())
+    }
 }
 
 pub type IrohKnotClient = KnotClient<IrohConnection>;
