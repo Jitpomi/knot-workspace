@@ -20,6 +20,11 @@ In traditional networking, devices remain fundamentally divided by their physica
 
 This relationship naturally expands beyond a simple pair into a **Family**. A logical Knot can tie together many different Ropes (devices)—each with its own distinct roles, character, and capabilities (e.g., sensors, microphones, cameras, actuators). Under the roof of a single logical Knot, these diverse devices function in harmony, looking out for each other and working together as a unified household.
 
+**Why is it called "Tying the Knot"?**
+*   **The Union of Separation:** Historically, "tying the knot" means taking separate strands and binding them so they behave as a single, unbroken rope. In networking, it represents binding independent physical hardware to a single logical coordinator.
+*   **Cryptographic Commitment:** Just as the idiom represents a committed partnership, "tying the knot" is the secure, authenticated handshake. By presenting valid cryptographic keys and credentials, the Rope makes a session-long commitment to the Knot.
+*   **Tensile Strength under Tension:** A physical knot gets tighter and stronger under load. When network conditions get rough—when IPs roam or Wi-Fi drops (tension)—the logical bond remains intact. The devices simply reconnect to "re-tie" the session state seamlessly.
+
 As we scale upward, these structures organize organically into larger network topologies:
 *   **Family (The Micro-Unit):** A single logical Knot coordinating a household or workstation of diverse Ropes (devices).
 *   **Clan (The Local Community):** A collection of Knots (families) cooperating and coordinating within a local network, workspace, or shared organization.
