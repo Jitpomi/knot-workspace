@@ -22,6 +22,7 @@ This relationship naturally expands beyond a simple pair into a **Family**. A lo
 
 **Why is it called "Tying the Knot"?**
 *   **The Union of Separation (Handfasting Ritual):** Historically, the phrase "tying the knot" traces back to ancient Celtic and medieval *handfasting* rituals, where a couple's hands were literally bound together with cords or rope to symbolize the joining of two separate lives into one unified partnership. In networking, it represents binding independent physical hardware into a single, coordinated logical session.
+*   **The Noun vs. Verb Duality (The "Tie"):** In physical engineering, a *tie* is a structural member designed to hold separate components together under load so they act as a single unit. In relationships, we speak of *social or family ties*. In the protocol, sending a `Tie` envelope acts as both the verb (to bind the connection) and the noun (the logical connection or tension bond established).
 *   **Cryptographic Commitment:** Just as the ceremonial knot represents a committed partnership, "tying the knot" is the secure, authenticated handshake. By presenting valid cryptographic keys and credentials, the Rope makes a session-long commitment to the Knot.
 *   **Tensile Strength under Tension:** A physical knot gets tighter and stronger under load. When network conditions get rough—when IPs roam or Wi-Fi drops (tension)—the logical bond remains intact. The devices simply reconnect to "re-tie" the session state seamlessly.
 
