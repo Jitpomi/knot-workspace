@@ -4,3 +4,6 @@
 [submodule "knot-protocol"]
 	path = knot-protocol
 	url = https://github.com/Jitpomi/knot-protocol.git
+[submodule "iroh-knot"]
+	path = iroh-knot
+	url = https://github.com/Jitpomi/iroh-knot.git
