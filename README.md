@@ -21,8 +21,8 @@ In traditional networking, devices remain fundamentally divided by their physica
 This relationship naturally expands beyond a simple pair into a **Family**. A logical Knot can tie together many different Ropes (devices)—each with its own distinct roles, character, and capabilities (e.g., sensors, microphones, cameras, actuators). Under the roof of a single logical Knot, these diverse devices function in harmony, looking out for each other and working together as a unified household.
 
 **Why is it called "Tying the Knot"?**
-*   **The Union of Separation:** Historically, "tying the knot" means taking separate strands and binding them so they behave as a single, unbroken rope. In networking, it represents binding independent physical hardware to a single logical coordinator.
-*   **Cryptographic Commitment:** Just as the idiom represents a committed partnership, "tying the knot" is the secure, authenticated handshake. By presenting valid cryptographic keys and credentials, the Rope makes a session-long commitment to the Knot.
+*   **The Union of Separation (Handfasting Ritual):** Historically, the phrase "tying the knot" traces back to ancient Celtic and medieval *handfasting* rituals, where a couple's hands were literally bound together with cords or rope to symbolize the joining of two separate lives into one unified partnership. In networking, it represents binding independent physical hardware into a single, coordinated logical session.
+*   **Cryptographic Commitment:** Just as the ceremonial knot represents a committed partnership, "tying the knot" is the secure, authenticated handshake. By presenting valid cryptographic keys and credentials, the Rope makes a session-long commitment to the Knot.
 *   **Tensile Strength under Tension:** A physical knot gets tighter and stronger under load. When network conditions get rough—when IPs roam or Wi-Fi drops (tension)—the logical bond remains intact. The devices simply reconnect to "re-tie" the session state seamlessly.
 
 As we scale upward, these structures organize organically into larger network topologies:
