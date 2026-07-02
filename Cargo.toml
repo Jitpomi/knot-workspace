@@ -1,6 +1,7 @@
 [workspace]
 members = [
     "knot-protocol",
+    "iroh-knot",
 ]
 resolver = "2"
 

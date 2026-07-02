@@ -1482,6 +1482,21 @@ dependencies = [
 ]
 
 [[package]]
+name = "iroh-knot"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "async-trait",
+ "base64",
+ "bytes",
+ "iroh",
+ "knot-protocol",
+ "serde",
+ "serde_json",
+ "tokio",
+]
+
+[[package]]
 name = "iroh-metrics"
 version = "1.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1650,12 +1665,12 @@ name = "knot-protocol"
 version = "0.1.0"
 dependencies = [
  "anyhow",
- "base64",
+ "async-trait",
  "bincode",
  "blake3",
  "bytes",
  "futures-util",
- "iroh",
+ "iroh-knot",
  "redb",
  "serde",
  "serde_json",
