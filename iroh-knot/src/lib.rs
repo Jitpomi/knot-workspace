@@ -206,7 +206,7 @@ impl IrohKnotHubBuilder {
             local_id,
         };
         let router = Router::builder(endpoint)
-            .accept(KNOT_ALPN.to_vec(), Arc::new(protocol))
+            .accept(KNOT_ALPN, Arc::new(protocol))
             .spawn();
 
         let event_handler = self.event_handler;
@@ -246,7 +246,7 @@ impl IrohKnotHub {
             local_id,
         };
         let router = Router::builder(endpoint)
-            .accept(KNOT_ALPN.to_vec(), Arc::new(protocol))
+            .accept(KNOT_ALPN, Arc::new(protocol))
             .spawn();
         Ok((Self { router }, rx))
     }
