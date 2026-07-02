@@ -1,3 +1,0 @@
-[submodule "knot-protocol"]
-	path = knot-protocol
-	url = https://github.com/Jitpomi/knot-protocol.git
