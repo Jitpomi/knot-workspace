@@ -1,0 +1,7 @@
+module amos_protocolFFI {
+    header "amos_protocolFFI.h"
+    export *
+    use "Darwin"
+    use "_Builtin_stdbool"
+    use "_Builtin_stdint"
+}

@@ -1,0 +1,239 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CADF513919EA8C72747870B8F5FFBE34 /* AmosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4528F0D4587DF75DFE67A6318D1FB76 /* AmosApp.swift */; };
+		93A35A24D5AE5A2DC91F5814D4214F6D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63054842C48D7E00CDF8C996CC67E6E /* ContentView.swift */; };
+		0836AAD79B72386A62E0ACFF3326799D /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C16F4695B7644FAB44FE788FF5EC8E /* AppState.swift */; };
+		3A2A02FA279207FC81C91595F1F0BA64 /* amos_core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DEB9EF92169BFABF1EFB14F0E396E8 /* amos_core.swift */; };
+		BFA398E15CD9A00EA8D73415206AABD2 /* amos_core.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E172002E8E72C857DFFEA35BC2D28C30 /* amos_core.xcframework */; };
+
+		74CD93F4A4703E1658270E98C9462D82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39BF81F09F088434CE51FA7DCBC14C0F /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D4528F0D4587DF75DFE67A6318D1FB76 /* AmosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmosApp.swift; sourceTree = "<group>"; };
+		E63054842C48D7E00CDF8C996CC67E6E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		45C16F4695B7644FAB44FE788FF5EC8E /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		F8B31E8928C0D216E6C569A9217F4AF5 /* Amos */ = {isa = PBXFileReference; explicitFileType = "wrapper.application"; includeInIndex = 0; path = Amos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD4D4CFE276EBA26FD13CB3046736CD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		182F3187451BCF5A7B6D317744327FFE /* Amos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Amos-Bridging-Header.h"; sourceTree = "<group>"; };
+		47DEB9EF92169BFABF1EFB14F0E396E8 /* amos_core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = amos_core.swift; sourceTree = "<group>"; };
+		E172002E8E72C857DFFEA35BC2D28C30 /* amos_core.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = amos_core.xcframework; sourceTree = "<group>"; };
+		39BF81F09F088434CE51FA7DCBC14C0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29B8B0DF4DEBDA3ECF3044618AE16BA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFA398E15CD9A00EA8D73415206AABD2 /* amos_core.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8ED523EDDE28B1B7C92E53AB0326846C = {
+			isa = PBXGroup;
+			children = (
+				D4528F0D4587DF75DFE67A6318D1FB76 /* AmosApp.swift */,
+				E63054842C48D7E00CDF8C996CC67E6E /* ContentView.swift */,
+				45C16F4695B7644FAB44FE788FF5EC8E /* AppState.swift */,
+				47DEB9EF92169BFABF1EFB14F0E396E8 /* amos_core.swift */,
+				E172002E8E72C857DFFEA35BC2D28C30 /* amos_core.xcframework */,
+				39BF81F09F088434CE51FA7DCBC14C0F /* Assets.xcassets */,
+				AD4D4CFE276EBA26FD13CB3046736CD0 /* Info.plist */,
+				182F3187451BCF5A7B6D317744327FFE /* Amos-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		EDCE061E05E7CFB72D94ECF976512F74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8B31E8928C0D216E6C569A9217F4AF5 /* Amos.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED81F97D209CB62AC27DFAE0BB130D81 = {
+			isa = PBXGroup;
+			children = (
+				8ED523EDDE28B1B7C92E53AB0326846C,
+				EDCE061E05E7CFB72D94ECF976512F74,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C653A5DC6962BDF2B98D9455BF0061E7 /* Amos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3024C5FBF6B2B341E7764E220BA68D5 /* Build configuration list for PBXNativeTarget "Amos" */;
+			buildPhases = (
+				03008A43903AF02976AA20B10A9DA6A5 /* Sources */,
+				29B8B0DF4DEBDA3ECF3044618AE16BA7 /* Frameworks */,
+				DE5C252A8EB0B9A18580E2E7DFA0C622 /* Resources */,
+
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Amos;
+			productName = Amos;
+			productReference = F8B31E8928C0D216E6C569A9217F4AF5 /* Amos.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C122E755ADAC7D0691FF190F0E7655D0 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = B6E26D514F0EDAD5FFEEEF85A82ACB20 /* Build configuration list for PBXProject "Amos" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED81F97D209CB62AC27DFAE0BB130D81;
+			productRefGroup = EDCE061E05E7CFB72D94ECF976512F74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C653A5DC6962BDF2B98D9455BF0061E7 /* Amos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE5C252A8EB0B9A18580E2E7DFA0C622 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74CD93F4A4703E1658270E98C9462D82 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+
+
+/* Begin PBXSourcesBuildPhase section */
+		03008A43903AF02976AA20B10A9DA6A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CADF513919EA8C72747870B8F5FFBE34 /* AmosApp.swift in Sources */,
+				93A35A24D5AE5A2DC91F5814D4214F6D /* ContentView.swift in Sources */,
+				0836AAD79B72386A62E0ACFF3326799D /* AppState.swift in Sources */,
+				3A2A02FA279207FC81C91595F1F0BA64 /* amos_core.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5B91C5869F455B7DC45F4199C3C1FB4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+    CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+    MARKETING_VERSION = 0.1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"SystemConfiguration",
+					"-framework",
+					"Network",
+					"-framework",
+					"Security",
+				);
+    PRODUCT_BUNDLE_IDENTIFIER = com.example.amos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Amos-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5696E90244511674C2923D1D3F023F56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+    CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+    MARKETING_VERSION = 0.1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"SystemConfiguration",
+					"-framework",
+					"Network",
+					"-framework",
+					"Security",
+				);
+    PRODUCT_BUNDLE_IDENTIFIER = com.example.amos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Amos-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3024C5FBF6B2B341E7764E220BA68D5 /* Build configuration list for PBXNativeTarget "Amos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B91C5869F455B7DC45F4199C3C1FB4A /* Debug */,
+				5696E90244511674C2923D1D3F023F56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B6E26D514F0EDAD5FFEEEF85A82ACB20 /* Build configuration list for PBXProject "Amos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B91C5869F455B7DC45F4199C3C1FB4A /* Debug */,
+				5696E90244511674C2923D1D3F023F56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C122E755ADAC7D0691FF190F0E7655D0 /* Project object */;
+}

@@ -1,0 +1,270 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52C8861D118BA3ED0609F9B5A9067642 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94A5D4A8B65482C250E59F7963AD016 /* App.swift */; };
+		570839D7EE6DA8BD44ADEC2317173BA0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285A2EDC9BF4B851062C0CA99F8739EF /* ContentView.swift */; };
+		87A781ECD670B6E452C0EBC5F95E15B9 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1EB11585252B923609062D5C7AA6DD /* AppState.swift */; };
+		A0CC00010000000000000001 /* CameraCaptureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FF00010000000000000001 /* CameraCaptureManager.swift */; };
+		A0CC00030000000000000003 /* AudioCaptureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FF00030000000000000003 /* AudioCaptureManager.swift */; };
+		A0CC00020000000000000002 /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FF00020000000000000002 /* CameraPreviewView.swift */; };
+		CB6E5C6C0C91C20BAFA5FEB914F23A15 /* amos_core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC9858394CF2A3FDA5905A0D2700AD7 /* amos_core.swift */; };
+		B331A8DA8506B675626DD0D25A943FC3 /* amos_core.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C812755EBDEAFAB0012EC77800E676 /* amos_core.xcframework */; };
+		9FC559573AB894F1D58224AAAA0D0B5E /* amos_core.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 01C812755EBDEAFAB0012EC77800E676 /* amos_core.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy,); }; };
+
+		15CE0C93D0DFC06576F668BEEE509BDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB266333D11890C9D3510A0EF701CC28 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F94A5D4A8B65482C250E59F7963AD016 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		285A2EDC9BF4B851062C0CA99F8739EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6D1EB11585252B923609062D5C7AA6DD /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		A0FF00010000000000000001 /* CameraCaptureManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCaptureManager.swift; sourceTree = "<group>"; };
+		A0FF00030000000000000003 /* AudioCaptureManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioCaptureManager.swift; sourceTree = "<group>"; };
+		A0FF00020000000000000002 /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
+		423D9E777ACABB100CE89A550D50630E /* Amos.app */ = {isa = PBXFileReference; explicitFileType = "wrapper.application"; includeInIndex = 0; path = Amos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8420758853F5EAB0986F5C7437D7FC16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AD18A372C0BE580D87D6EFBFFB4AF54 /* Amos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Amos-Bridging-Header.h"; sourceTree = "<group>"; };
+		6EC9858394CF2A3FDA5905A0D2700AD7 /* amos_core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = amos_core.swift; sourceTree = "<group>"; };
+		01C812755EBDEAFAB0012EC77800E676 /* amos_core.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = amos_core.xcframework; sourceTree = "<group>"; };
+		BB266333D11890C9D3510A0EF701CC28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06ED6232FFDBB4BDCBC0C55A5066307A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B331A8DA8506B675626DD0D25A943FC3 /* amos_core.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		91AFB8E56C9989EE806D8BE1D8BA8BF8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9FC559573AB894F1D58224AAAA0D0B5E /* amos_core.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E01C01B9B27BEFE60B89C93A8AF9530 = {
+			isa = PBXGroup;
+			children = (
+				F94A5D4A8B65482C250E59F7963AD016 /* App.swift */,
+				285A2EDC9BF4B851062C0CA99F8739EF /* ContentView.swift */,
+				6D1EB11585252B923609062D5C7AA6DD /* AppState.swift */,
+				A0FF00010000000000000001 /* CameraCaptureManager.swift */,
+				A0FF00030000000000000003 /* AudioCaptureManager.swift */,
+				A0FF00020000000000000002 /* CameraPreviewView.swift */,
+				6EC9858394CF2A3FDA5905A0D2700AD7 /* amos_core.swift */,
+				01C812755EBDEAFAB0012EC77800E676 /* amos_core.xcframework */,
+				BB266333D11890C9D3510A0EF701CC28 /* Assets.xcassets */,
+				8420758853F5EAB0986F5C7437D7FC16 /* Info.plist */,
+				0AD18A372C0BE580D87D6EFBFFB4AF54 /* Amos-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		2DA758AE0F07E9048757F7E74AC66E6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				423D9E777ACABB100CE89A550D50630E /* Amos.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DA2AD63EF85BB34EA4D7E3D352702BA = {
+			isa = PBXGroup;
+			children = (
+				6E01C01B9B27BEFE60B89C93A8AF9530,
+				2DA758AE0F07E9048757F7E74AC66E6F,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		753F8CCF5E29A90CB8DC41FB14BE4BF6 /* Amos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9526CD4DA1BADDE336F91A6652D3E2EE /* Build configuration list for PBXNativeTarget "Amos" */;
+			buildPhases = (
+				FB5A4B0516915EA18BD923464C8C8495 /* Sources */,
+				06ED6232FFDBB4BDCBC0C55A5066307A /* Frameworks */,
+				1D5C80F5471CCED56FA8D285F3539F28 /* Resources */,
+				91AFB8E56C9989EE806D8BE1D8BA8BF8 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Amos;
+			productName = Amos;
+			productReference = 423D9E777ACABB100CE89A550D50630E /* Amos.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6191C3BDDB2D64F8B12ADB7C83C2E6B6 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = FA7247F58FA61C188CF0243877BAE5A2 /* Build configuration list for PBXProject "Amos" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DA2AD63EF85BB34EA4D7E3D352702BA;
+			productRefGroup = 2DA758AE0F07E9048757F7E74AC66E6F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				753F8CCF5E29A90CB8DC41FB14BE4BF6 /* Amos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D5C80F5471CCED56FA8D285F3539F28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15CE0C93D0DFC06576F668BEEE509BDD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+
+
+/* Begin PBXSourcesBuildPhase section */
+		FB5A4B0516915EA18BD923464C8C8495 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C8861D118BA3ED0609F9B5A9067642 /* App.swift in Sources */,
+				570839D7EE6DA8BD44ADEC2317173BA0 /* ContentView.swift in Sources */,
+				87A781ECD670B6E452C0EBC5F95E15B9 /* AppState.swift in Sources */,
+				A0CC00010000000000000001 /* CameraCaptureManager.swift in Sources */,
+				A0CC00030000000000000003 /* AudioCaptureManager.swift in Sources */,
+				A0CC00020000000000000002 /* CameraPreviewView.swift in Sources */,
+				CB6E5C6C0C91C20BAFA5FEB914F23A15 /* amos_core.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D4CB91B7C882F967EF1470E4DC28410D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Amos.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				ENABLE_HARDENED_RUNTIME = YES;
+    CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+    MARKETING_VERSION = 0.1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"SystemConfiguration",
+					"-framework",
+					"Network",
+					"-framework",
+					"Security",
+				);
+    PRODUCT_BUNDLE_IDENTIFIER = com.example.amos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Amos-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		2A4EC7EF2D1995ECC34E69CED13E7446 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Amos.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				ENABLE_HARDENED_RUNTIME = YES;
+    CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+    MARKETING_VERSION = 0.1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"SystemConfiguration",
+					"-framework",
+					"Network",
+					"-framework",
+					"Security",
+				);
+    PRODUCT_BUNDLE_IDENTIFIER = com.example.amos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Amos-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9526CD4DA1BADDE336F91A6652D3E2EE /* Build configuration list for PBXNativeTarget "Amos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4CB91B7C882F967EF1470E4DC28410D /* Debug */,
+				2A4EC7EF2D1995ECC34E69CED13E7446 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA7247F58FA61C188CF0243877BAE5A2 /* Build configuration list for PBXProject "Amos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4CB91B7C882F967EF1470E4DC28410D /* Debug */,
+				2A4EC7EF2D1995ECC34E69CED13E7446 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6191C3BDDB2D64F8B12ADB7C83C2E6B6 /* Project object */;
+}
