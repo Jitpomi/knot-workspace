@@ -2,6 +2,8 @@
 members = [
     "knot-protocol",
     "iroh-knot",
+    "amos/core",
+    "amos/cli",
 ]
 resolver = "2"
 
