@@ -1,0 +1,6 @@
+[submodule "amos"]
+	path = amos
+	url = https://github.com/Jitpomi/amos.git
+[submodule "knot-protocol"]
+	path = knot-protocol
+	url = https://github.com/Jitpomi/knot-protocol.git
