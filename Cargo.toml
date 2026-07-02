@@ -1,7 +1,5 @@
 [workspace]
 members = [
-    "amos/core",
-    "amos/cli",
     "knot-protocol",
 ]
 resolver = "2"
