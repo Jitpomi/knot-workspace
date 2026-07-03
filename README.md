@@ -105,6 +105,45 @@ cargo run -p iroh-knot --example 03_command_client -- <CONNECTION_TICKET>
 
 ---
 
+## 🔒 Security Architecture: Zero-Trust Admission & Platform Enclaves
+
+Knot Workspace coordinates a zero-trust security paradigm that prevents session takeovers and privilege escalations while allowing edge devices to coordinate completely offline.
+
+### 🎟️ The Bouncer-and-Ticket Metaphor
+Imagine a venue bouncer (the Host) admitting a guest (the client device). Instead of the bouncer calling head office to check a database (online API check), the guest presents a signed ticket (the token):
+1. **The Seal Check (Signature):** The bouncer looks at the signature on the ticket using a public seal (the Root Public Key). Because of asymmetric math, the bouncer knows the ticket is genuine without needing to call the office.
+2. **The ID Match (Identity Binding):** The bouncer matches the guest's fingerprint (their TLS public key) against the owner identifier on the ticket. If someone else stole the ticket, they get rejected.
+3. **The Bag Policy (Capability Check):** The ticket list specifies allowed gear: `["camera-1", "mic-1"]`. If the guest tries to bring in an unauthorized capability, the bouncer blocks the door.
+
+---
+
+### A. The Feature
+A decentralized connection admission gateway that verifies asymmetric cryptographic signatures (Ed25519) at the edge, utilizing hardware-backed enclaves (Apple Keychain/Secure Enclave & Android Keystore) to validate client identity, session bounds, and capability matrices completely offline.
+
+### B. The Problem It Solves
+Traditional P2P and edge coordination frameworks suffer from three severe security and portability vulnerabilities:
+1. **The Offline Dependency SPOF:** Traditional token validation usually requires a connection to a central authorization server (e.g., Auth0, database query, etc.). If the internet is down, local smart homes, broadcast stages, or offline meshes cannot coordinate.
+2. **The Token Replay/Spoofing Vulnerability:** Standard access tokens (like typical bearer tokens) can be stolen and replayed by a malicious device to hijack a session. The protocol cannot prove the device holding the token is actually the device the token was issued to.
+3. **The Sandboxing Portability Trap:** Edge applications must run on everything from IoT hubs to mobile apps (iOS/Android). Hardcoding paths (like `/etc/amos/config`), storing static secrets, or using raw environment variables crashes or fails on sandboxed mobile systems and exposes private keys to physical attacks.
+
+### C. How It's Solved
+We designed and implemented a **Platform-Injected, Asymmetric Gateway Pattern**:
+1. **Decoupled Handshake Callback:** The core `knot-protocol` is kept protocol-pure and free of heavy crypto dependencies. It exposes a thread-safe validation callback (`JoinPolicy::Custom`) that passes the client's public key (retrieved straight from the secure TLS 1.3 socket layer), the client's `join_token`, and their declared `capabilities` to the application.
+2. **Platform Dependency Injection (via UniFFI):** The Rust core (`amos-core`) exposes `start_director` to the platforms. The platform-native wrappers (Swift on iOS/macOS, Kotlin on Android) load the trusted root public key from their operating system's native secure hardware enclaves (**Apple Keychain** and **Android Keystore**) and inject the raw key bytes into the Rust engine.
+3. **Detached-Signature Cryptographic Binding:** The client sends a token formatted as `Base64Url(JSON_Claims).Base64Url(Ed25519_Signature)`. The Rust engine performs the actual Ed25519 validation against the injected root public key:
+   - Verifies cryptographic signature authenticity.
+   - Enforces temporal expiration bounds (with a 60-second clock-skew allowance).
+   - Verifies cryptographic identity binding (`claims.sub == authenticated_node_id`). If a malicious client tries to replay another device's token, the identity binding check immediately catches the mismatch and drops the connection.
+   - Verifies capability matching (validates that the client's declared capabilities are a strict subset of the token-authorized list).
+
+### D. Why It's Cool 🚀
+* **Absolute Zero-Trust, 100% Offline:** A Host can boot in the middle of a forest with no internet connection and securely validate that a joining camera or microphone is authorized to connect, which session it belongs to, and exactly what streams it is allowed to publish.
+* **Core Purity (Zero Dependency Bloat):** The `knot-protocol` crate remains ultra-lean (no `ring`, `ed25519-dalek`, or heavy crypto dependencies). The application layer (`amos`) imports the crypto, keeping the transport layer lightweight and transport-agnostic.
+* **Hardware-Backed Cryptography:** By leveraging dependency injection via UniFFI, the system utilizes the absolute best hardware security available on the device (the **Apple Secure Enclave** and **Android StrongBox**). It is cryptographically secure without storing plain private keys on the filesystem.
+* **Extensible & Future-Proof:** The validation loop supports future expansion (like UCAN/Biscuit delegation paths or prefix matching) easily, without requiring changes to the transport layer.
+
+---
+
 ## 📜 Specifications & DX Documentation
 
 For detailed specs, terms, and guide manuals, see the documentation files in the core submodule:
