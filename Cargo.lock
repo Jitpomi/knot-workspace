@@ -62,6 +62,7 @@ dependencies = [
  "clap",
  "ctrlc",
  "ed25519-dalek 2.2.0",
+ "iroh-knot",
  "knot-protocol",
  "tokio",
 ]
